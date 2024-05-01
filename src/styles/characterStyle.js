@@ -1,0 +1,91 @@
+import {StyleSheet} from 'react-native';
+import Colors from '../theme/colors';
+
+export const characterDetailStyle = StyleSheet.create({
+  imageContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 10,
+  },
+  image: {
+    width: 160,
+    height: 160,
+    borderRadius: 200,
+    borderWidth: 2,
+  },
+  name: {
+    textAlign: 'center',
+    marginVertical: 15,
+    fontSize: 20,
+    fontWeight: 'bold',
+    shadowColor: Colors.ORANGE,
+    shadowRadius: 10,
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.8,
+  },
+  aliveStatusContainer: {
+    backgroundColor: Colors.GREEN,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    position: 'absolute',
+    bottom: -5,
+    alignSelf: 'center',
+  },
+  deadStatusContainer: {
+    backgroundColor: Colors.RED,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    position: 'absolute',
+    bottom: -5,
+    alignSelf: 'center',
+  },
+  status: {
+    color: Colors.WHITE,
+    fontSize: 16,
+    fontWeight: '500',
+  },
+  statusAliveContainer: {
+    borderColor: Colors.GREEN,
+  },
+  statusDeadContainer: {
+    borderColor: Colors.RED,
+  },
+  sectionTitle: {
+    textAlign: 'center',
+    marginVertical: 10,
+    color: Colors.GRAY,
+    backgroundColor: '#e4dccf',
+  },
+  sectionContainer: {
+    backgroundColor: '#e4dccf',
+    marginHorizontal: 15,
+    marginVertical: 25,
+    borderRadius: 10,
+    shadowColor: Colors.ORANGE,
+    shadowRadius: 10,
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.5,
+  },
+  property: {
+    flex: 1,
+    margin: 10,
+    borderRadius: 40,
+    padding: 5,
+    backgroundColor: '#e4dccf',
+    shadowColor: Colors.ORANGE,
+    shadowRadius: 10,
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.5,
+  },
+  propertyTitle: {
+    flex: 2,
+    margin: 10,
+    borderRadius: 50,
+    padding: 5,
+    backgroundColor: '#e4dccf',
+    shadowColor: Colors.ORANGE,
+    shadowRadius: 10,
+    shadowOffset: {width: 0, height: 3},
+    shadowOpacity: 0.7,
+  },
+});
